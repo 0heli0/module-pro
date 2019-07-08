@@ -1,5 +1,7 @@
 package com.module.pro.apply.moduleproapply.conditonTest;
 
+import com.module.pro.apply.moduleproapply.singleton.Singleton3;
+
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
@@ -14,7 +16,7 @@ public class ConditionTest {
 
 
     public static void main(String[] args) throws InterruptedException{
-        while (count < 30) {
+       /* while (count < 30) {
             ConditionTreadA a = new ConditionTreadA();
             ConditionTreadB b = new ConditionTreadB();
             ConditionTreadC c = new ConditionTreadC();
@@ -23,7 +25,13 @@ public class ConditionTest {
             c.start();
             count++;
         }
-
+*/
+       Integer a= 6;
+       aa(a);
+        System.err.println(a);
+    }
+    static void aa(Integer a){
+        a = 155;
     }
 
     static class ConditionTreadA extends Thread {
